@@ -95,10 +95,10 @@ a {
 .aside {
   width: 270px;
   position: fixed;
+  background-color: #fff;
   top: 60px;
   bottom: 60px;
   left: 0;
-  border-right: 1px solid #383838;
   overflow-y: auto;
 }
 
@@ -167,7 +167,7 @@ a {
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #f1f1f1;
   padding: 20px;
 }
 
@@ -290,7 +290,8 @@ body {
 /* Footer styles */
 .footer {
   height: 60px;
-  background-color: #f8f9fa;
+  background-color: #fff;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,4 +300,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1890;
+}
+
+.blue{
+  color: #4169E1;
 }
