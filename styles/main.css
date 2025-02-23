@@ -13,7 +13,7 @@ body, html {
   line-height: 1.5;
   font-size: 14px;
   font-weight: 400;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  /* overflow-x: hidden; Prevent horizontal scrolling */
 }
 
 * {
@@ -100,7 +100,7 @@ a {
   bottom: 60px;
   left: 0;
   overflow-y: auto;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  /* overflow-x: hidden; Prevent horizontal overflow */
 }
 
 .aside-inner {
