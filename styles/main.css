@@ -154,6 +154,10 @@ a {
   min-height: calc(100vh - 120px);
 }
 
+.main-content .dash-text{
+  font-size: 40px;
+}
+
 .chart-container {
   background: white;
   border-radius: 8px;
