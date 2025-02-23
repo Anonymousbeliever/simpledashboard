@@ -141,7 +141,7 @@ a {
 }
 
 .item a:hover {
-  color: #32CD32;
+  color: #228B22;
 }
 
 /* Main content styles */
@@ -176,6 +176,15 @@ body {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.table th{
+  background-color: #228B22;
+  color: #fff;
+}
+
+.green-text{
+  color: #228B22;
 }
 
 .chart-wrapper {
