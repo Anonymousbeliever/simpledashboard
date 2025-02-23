@@ -18,7 +18,7 @@ const balanceChart = new Chart(balanceCtx, {
         datasets: [{
             label: 'Bank Balance',
             data: Array(10).fill(0),
-            borderColor: '#28a745',
+            borderColor: '#228B22',
             tension: 0.4,
             fill: false
         }, {
@@ -49,7 +49,7 @@ const expensesChart = new Chart(expensesCtx, {
         datasets: [{
             data: [40, 35, 25],
             backgroundColor: [
-                '#28a745',
+                '#228B22',
                 '#17a2b8',
                 '#6c757d'
             ]
@@ -74,7 +74,7 @@ const incomeChart = new Chart(incomeCtx, {
         datasets: [{
             label: 'Monthly Income',
             data: Array(12).fill(0),
-            borderColor: '#28a745',
+            borderColor: '#228B22',
             tension: 0.4,
             fill: false
         }]
