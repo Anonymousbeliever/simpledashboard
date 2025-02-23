@@ -24,7 +24,7 @@ const balanceChart = new Chart(balanceCtx, {
         }, {
             label: 'Cash at Hand',
             data: Array(10).fill(0),
-            borderColor: '#17a2b8',
+            borderColor: '#FFC107',
             tension: 0.4,
             fill: false
         }]
@@ -45,13 +45,13 @@ const expensesCtx = document.getElementById('expensesChart').getContext('2d');
 const expensesChart = new Chart(expensesCtx, {
     type: 'pie',
     data: {
-        labels: ['Operations', 'Marketing', 'Development'],
+        labels: ['Cartegory 1', 'Cartegory 2', 'Cartegory 3'],
         datasets: [{
             data: [40, 35, 25],
             backgroundColor: [
                 '#228B22',
                 '#17a2b8',
-                '#6c757d'
+                '#FFC107'
             ]
         }]
     },
