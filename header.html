@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSacco Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .header {
+            padding: 0.75rem 1rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .logo {
+            height: 32px;
+        }
+
+        .header-text{
+            margin-left: -500px;
+        }
+        
+        .notification-icon {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .flag-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        
+        .user-badge {
+            background: #00b3ff;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+        
+        .menu-icon {
+            color: #666;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div>
+                    <img src="images/websacco.png" alt="WebSacco Logo" class="logo">
+                </div>
+                
+                <!-- Title -->
+                <div class="d-none d-md-block header-text">
+                    <h6 class="mb-0">Test Sacco 100 - Chair Person</h6>
+                </div>
+                
+                <!-- Right Elements -->
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Notification Bell -->
+                    <a href="#" class="notification-icon">
+                        <i class="far fa-bell"></i>
+                    </a>
+                    
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <img src="images/flag.png" alt="English" class="flag-icon">
+                        <span class="d-none d-md-inline">English</span>
+                    </div>
+                    
+                    <!-- User Badge -->
+                    <div class="user-badge">
+                        ST
+                    </div>
+                    
+                    <!-- Menu Icon -->
+                    <a href="#" class="menu-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
