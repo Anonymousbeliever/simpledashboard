@@ -1,0 +1,88 @@
+/*Font Awesome Free Icon*/
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Aside */
+.aside{
+    width: 270px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    border-right: 1px solid #383838;
+    transition: all 0.3s ease;
+}
+
+.aside .aside-inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+
+.sidebar-search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding-top: 0;
+    padding: 5px ;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  
+
+.aside .nav{
+    list-style: none;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.aside .nav li{
+    display: block;
+}
+
+.sidebar-item {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+ 
+  .item a:hover{
+    color: #32CD32;
+  }
+
+  
