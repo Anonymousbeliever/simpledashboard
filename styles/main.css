@@ -42,7 +42,20 @@ a {
 }
 
 .header-text {
-  margin-left: -500px;
+  text-align: center;
+  flex: 1;
+  margin: 0 15px;
+}
+
+.header-text h6 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-right {
+  gap: 1rem;
 }
 
 .notification-icon {
@@ -79,10 +92,52 @@ a {
 .menu-icon {
   color: #666;
   font-size: 1.5rem;
-  margin-left: 1rem;
 }
 
-/* Header ends */
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .header-text h6 {
+    font-size: 0.9rem;
+  }
+
+  .language-text {
+    display: none;
+  }
+
+  .header-right {
+    gap: 0.5rem;
+  }
+
+  .menu-icon {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-text h6 {
+    font-size: 0.8rem;
+    max-width: 150px;
+  }
+
+  .notification-icon {
+    font-size: 1rem;
+  }
+
+  .user-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .flag-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
 
 /* Main container styles */
 .main-container {
