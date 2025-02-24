@@ -9,47 +9,47 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="styles/main.css">
   <!-- Favicon Link -->
-  <link rel="icon" href="images/favicon.png" type="image/png">  <!-- Ensure correct path and file type -->
+  <link rel="icon" href="images/favicon.png" type="image/png"> <!-- Ensure correct path and file type -->
   <title>WebSacco</title>
 </head>
 
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
 
-<!-- Header starts -->
-<header class="header fixed-top">
-  <div class="container-fluid">
-    <div class="d-flex justify-content-between align-items-center">
-      <!-- Logo -->
-      <div class="d-flex align-items-center">
-        <img src="images/websacco.png" alt="WebSacco Logo" class="logo">
-      </div>
-
-      <!-- Title -->
-      <div class="header-text">
-        <h6 class="mb-0">Test Sacco 100 - Chair Person</h6>
-      </div>
-
-      <!-- Right Elements -->
-      <div class="d-flex align-items-center header-right">
-        <a href="#" class="notification-icon"><i class="far fa-bell"></i></a>
-        <div class="language-selector">
-          <img src="images/flag.png" alt="English" class="flag-icon">
-          <span class="language-text">English</span>
+  <!-- Header starts -->
+  <header class="header fixed-top">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="d-flex align-items-center">
+          <img src="images/websacco.png" alt="WebSacco Logo" class="logo">
         </div>
-        <div class="user-badge">ST</div>
-        <a href="#" class="menu-icon"><i class="fas fa-ellipsis-v"></i></a>
+
+        <!-- Title -->
+        <div class="header-text">
+          <h6 class="mb-0">Test Sacco 100 - Chair Person</h6>
+        </div>
+
+        <!-- Right Elements -->
+        <div class="d-flex align-items-center header-right">
+          <a href="#" class="notification-icon"><i class="far fa-bell"></i></a>
+          <div class="language-selector">
+            <img src="images/flag.png" alt="English" class="flag-icon">
+            <span class="language-text">English</span>
+          </div>
+          <div class="user-badge">ST</div>
+          <a href="#" class="menu-icon"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-<!-- Header ends -->
+  </header>
+  <!-- Header ends -->
 
-<!-- Add these elements right after the header -->
-<button class="sidebar-toggle" aria-label="Toggle Sidebar">
-  <i class="fas fa-bars"></i>
-</button>
-<div class="sidebar-overlay"></div>
+  <!-- Add these elements right after the header -->
+  <button class="sidebar-toggle" aria-label="Toggle Sidebar">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="sidebar-overlay"></div>
 
   <!-- Main content container -->
   <div class="main-container d-flex flex-grow-1">
@@ -146,138 +146,163 @@
     </section>
     <!-- Aside ends -->
 
-     <!-- Main content -->
-     <section class="main-content">
+    <!-- Main content -->
+    <section class="main-content">
       <div class="container-fluid">
         <span class="mb-4 text-muted fw-bold dash-text">GROUP DASHBOARD</span>
         <p class="text-muted">Group transaction summary</p>
-        
-        <div class="row">
-            <!-- Balance Charts -->
-            <div class="col-md-6">
-                <div class="chart-container">
-                    <div class="header-flex">
-                        <p class="mb-0 text-muted">Account Bank Balance</p>
-                        <select class="form-select period-select">
-                            <option>Last 12 Months</option>
-                            <option>Last 6 Months</option>
-                            <option>Last 3 Months</option>
-                        </select>
-                    </div>
-                    <div class="chart-wrapper">
-                        <canvas id="balanceChart"></canvas>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Contributions Table -->
-            <div class="col-md-6">
-                <div class="table-container">
-                    <h5 class="green-text">Contributions, Loans & Fines</h5>
-                    <p>Members contributions savings, loans and fines</p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="th">#</th>
-                                <th>Member</th>
-                                <th>Bal (KSH)</th>
-                                <th>Amount (KSH)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Catherine Majala</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>John Doe</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Kalif Doe</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Stephen Tumaini</td>
-                              <td>0</td>
-                              <td>0</td>
-                          </tr>
-                        </tbody>
-                    </table>
+        <div class="row">
+          <!-- Balance Charts -->
+          <div class="col-md-6">
+            <div class="chart-container">
+                <div class="balance-info">
+                    <div class="actual-balance">
+                        <span class="balance-label">Actual Bank Balance</span>
+                        <span class="balance-amount">KES 0</span>
+                    </div>
+                    <div class="cash-hand">
+                        <span class="balance-label">Cash at Hand</span>
+                        <span class="balance-amount">KES 0</span>
+                    </div>
+                </div>
+                <div class="header-flex">
+                    <p class="mb-0 text-muted">System Bank Balances</p>
+                    <select class="form-select period-select">
+                        <option>Last 12 Months</option>
+                        <option>Last 6 Months</option>
+                        <option>Last 3 Months</option>
+                    </select>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="balanceChart"></canvas>
                 </div>
             </div>
+        </div>
+
+          <!-- Contributions Table -->
+        <!-- Contributions Table Section -->
+<div class="col-md-6">
+  <div class="table-container">
+      <h5 class="green-text">Contributions, Loans & Fines</h5>
+      <p class="text-muted">Members contributions savings, loans and fines</p>
+      
+      <!-- Navigation Tabs -->
+      <ul class="nav nav-tabs mb-3">
+          <li class="nav-item">
+              <a class="nav-link active" href="#contributions">Contributions</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#loans">Loans</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#fines">Fines</a>
+          </li>
+      </ul>
+
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>#</th>
+                  <th>Member</th>
+                  <th>Bal (KES)</th>
+                  <th>Arrears (KES)</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Catherine Majala</td>
+                  <td>0</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>John Doe</td>
+                  <td>0</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Kalif Doe</td>
+                  <td>0</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Stephen Tumaini</td>
+                  <td>0</td>
+                  <td>0</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
         </div>
 
         <!-- Expenses Section -->
         <div class="row">
-            <div class="col-12">
-                <div class="chart-container">
-                    <h5 class="green-text">Group Expenses</h5>
-                    <p class="text-muted">Group expenses summary by category</p>
-                    <div class="expenses-wrapper">
-                        <canvas id="expensesChart"></canvas>
-                    </div>
-                </div>
+          <div class="col-12">
+            <div class="chart-container">
+              <h5 class="green-text">Group Expenses</h5>
+              <p class="text-muted">Group expenses summary by category</p>
+              <div class="expenses-wrapper">
+                <canvas id="expensesChart"></canvas>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Group Income Section -->
         <div class="income-section">
-            <h5 class="green-text">Group Income</h5>
-            <p class="income-subtitle">Monthly expenses over time</p>
-            <div class="chart-wrapper mb-4">
-                <canvas id="incomeChart"></canvas>
-            </div>
-            
-            <div class="metric-container">
-              <div class="metric-row">
-                  <div class="metric-left">
-                      <span class="metric-title text-muted fw-bold">Feb Collections</span>
-                      <span class="metric-subtitle">
-                          0% ↑ increase
-                      </span>
-                  </div>
-                  <div class="metric-center">KES 0</div>
-                  <button class="view-button">View</button>
-              </div>
-              
-              <div class="metric-row">
-                  <div class="metric-left">
-                      <span class="metric-title text-muted fw-bold">Feb Net Income</span>
-                      <span class="metric-subtitle">
-                          0% ↑ increase
-                      </span>
-                  </div>
-                  <div class="metric-center">KES 0</div>
-                  <button class="view-button">View</button>
-              </div>
-              
-              <div class="metric-row">
-                  <div class="metric-left">
-                      <span class="metric-title text-muted fw-bold">Feb Profit Margin</span>
-                      <span class="metric-subtitle">
-                          0% ↑ increase
-                      </span>
-                  </div>
-                  <div class="metric-center">KES 0</div>
-                  <button class="view-button">View</button>
-              </div>
+          <h5 class="green-text">Group Income</h5>
+          <p class="income-subtitle">Monthly expenses over time</p>
+          <div class="chart-wrapper mb-4">
+            <canvas id="incomeChart"></canvas>
           </div>
-    </div>
-  </section>
+
+          <div class="metric-container">
+            <div class="metric-row">
+              <div class="metric-left">
+                <span class="metric-title text-muted fw-bold">Feb Collections</span>
+                <span class="metric-subtitle">
+                  0% ↑ increase
+                </span>
+              </div>
+              <div class="metric-center">KES 0</div>
+              <button class="view-button">View</button>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric-left">
+                <span class="metric-title text-muted fw-bold">Feb Net Income</span>
+                <span class="metric-subtitle">
+                  0% ↑ increase
+                </span>
+              </div>
+              <div class="metric-center">KES 0</div>
+              <button class="view-button">View</button>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric-left">
+                <span class="metric-title text-muted fw-bold">Feb Profit Margin</span>
+                <span class="metric-subtitle">
+                  0% ↑ increase
+                </span>
+              </div>
+              <div class="metric-center">KES 0</div>
+              <button class="view-button">View</button>
+            </div>
+          </div>
+        </div>
+    </section>
   </div>
 
   <!-- Footer -->
   <section class="footer">
     <div class="copyright">
-       <span id="currentYear"></span> &copy; WebSacco <span class="blue">Chamasoft</span> 
+      <span id="currentYear"></span> &copy; WebSacco <span class="blue">Chamasoft</span>
     </div>
   </section>
 
@@ -286,7 +311,7 @@
     document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

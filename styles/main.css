@@ -222,6 +222,61 @@ a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Add these styles to your existing CSS */
+.balance-info {
+  margin-bottom: 20px;
+}
+
+.actual-balance, .cash-hand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.balance-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.balance-amount {
+  font-weight: 500;
+  color: #228B22;
+}
+
+.nav-tabs .nav-link {
+  color: #666;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #228B22;
+  border-bottom: 2px solid #228B22;
+  font-weight: 500;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .balance-info {
+      margin-bottom: 15px;
+  }
+
+  .nav-tabs .nav-link {
+      padding: 8px 12px;
+      font-size: 13px;
+  }
+
+  .table th, .table td {
+      font-size: 13px;
+  }
+}
+
 body {
   background-color: #f1f1f1;
   padding: 20px;
