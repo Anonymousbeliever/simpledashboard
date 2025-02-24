@@ -16,7 +16,7 @@ const balanceChart = new Chart(balanceCtx, {
     data: {
         labels: ['0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1.0'],
         datasets: [{
-            label: 'Bank Balance',
+            label: 'Bank Balances',
             data: Array(10).fill(0),
             borderColor: '#228B22',
             tension: 0.4,
@@ -130,5 +130,5 @@ window.addEventListener('resize', function() {
     expensesChart.update();
 });
 
-// Set current year
+//current year
 document.getElementById("currentYear").textContent = new Date().getFullYear();
