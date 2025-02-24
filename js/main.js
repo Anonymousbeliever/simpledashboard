@@ -1,5 +1,5 @@
-   // Common chart options
-   const commonOptions = {
+// Common chart options
+const commonOptions = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
@@ -45,7 +45,7 @@ const expensesCtx = document.getElementById('expensesChart').getContext('2d');
 const expensesChart = new Chart(expensesCtx, {
     type: 'pie',
     data: {
-        labels: ['Cartegory 1', 'Cartegory 2', 'Cartegory 3'],
+        labels: ['Category 1', 'Category 2', 'Category 3'],
         datasets: [{
             data: [40, 35, 25],
             backgroundColor: [
@@ -106,3 +106,29 @@ const incomeChart = new Chart(incomeCtx, {
         }
     }
 });
+
+// Sidebar toggle functionality
+const sidebar = document.querySelector('.aside');
+const sidebarToggle = document.querySelector('.sidebar-toggle');
+const overlay = document.querySelector('.sidebar-overlay');
+
+function toggleSidebar() {
+    sidebar.classList.toggle('show');
+    overlay.classList.toggle('show');
+}
+
+sidebarToggle.addEventListener('click', toggleSidebar);
+overlay.addEventListener('click', toggleSidebar);
+
+// Update chart options on window resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth <= 768) {
+        expensesChart.options.plugins.legend.position = 'bottom';
+    } else {
+        expensesChart.options.plugins.legend.position = 'right';
+    }
+    expensesChart.update();
+});
+
+// Set current year
+document.getElementById("currentYear").textContent = new Date().getFullYear();
