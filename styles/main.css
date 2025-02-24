@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
 
 /* Base styles */
-body, html {
+body,
+html {
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -155,7 +156,7 @@ a {
   bottom: 60px;
   left: 0;
   overflow-y: auto;
-  /* overflow-x: hidden; Prevent horizontal overflow */
+  overflow-x: hidden; /*  Prevent horizontal overflow */
 }
 
 .aside-inner {
@@ -207,7 +208,8 @@ a {
   margin-bottom: 50px;
   padding: 20px;
   min-height: calc(100vh - 120px);
-  overflow-x: hidden; /* Ensure no overflow horizontally */
+  overflow-x: hidden;
+  /* Ensure no overflow horizontally */
 }
 
 .main-content .dash-text {
@@ -227,7 +229,8 @@ a {
   margin-bottom: 20px;
 }
 
-.actual-balance, .cash-hand {
+.actual-balance,
+.cash-hand {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -264,16 +267,17 @@ a {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .balance-info {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .nav-tabs .nav-link {
-      padding: 8px 12px;
-      font-size: 13px;
+    padding: 8px 12px;
+    font-size: 13px;
   }
 
-  .table th, .table td {
-      font-size: 13px;
+  .table th,
+  .table td {
+    font-size: 13px;
   }
 }
 
@@ -558,7 +562,8 @@ body {
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 1000;
-    width: 250px; /* Slightly smaller on mobile */
+    width: 250px;
+    /* Slightly smaller on mobile */
   }
 
   .aside.show {
@@ -619,6 +624,3 @@ body {
 .aside {
   transition: transform 0.3s ease;
 }
-
-
-
